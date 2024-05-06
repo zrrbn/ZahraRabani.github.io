@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" style="scroll-behavior: smooth;">
+
+<head>
+    <title>HOME</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- scripts -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="main.js" defer></script>
+    <script src="../assets/js/pages/index.js" defer></script>
+    <script src="../assets/js/components/footer.js" defer></script>
+    <script src="../assets/js/components/projects.js" defer></script>
+    <!-- <script src="../assets/js/components/projects-renderer.js" defer></script> -->
+    <!-- styles -->
+    <link rel="stylesheet" href="../assets/css/pages/index.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Splash&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <body>
+        <div class="loading" id="loading">
+            <div class="loading-text">
+                <span class="loading-text-words">L</span>
+                <span class="loading-text-words">O</span>
+                <span class="loading-text-words">A</span>
+                <span class="loading-text-words">D</span>
+                <span class="loading-text-words">I</span>
+                <span class="loading-text-words">N</span>
+                <span class="loading-text-words">G</span>
+            </div>
+        </div>
+        <div class="sidenav" id="sidenav">
+            <a href="javascript:void(0)" class="close-sidenav" onclick="closeNav()">&times;</a>
+            <a id="first" onclick="closeNav()">home</a>
+            <a href="#experiences" onclick="closeNav()">experiences</a>
+            <a href="#projects" onclick="closeNav()">projects</a>
+            <a href="#graphics" onclick="closeNav()">graphics</a>
+            <a href="#footer" onclick="closeNav()">contact</a>
+        </div>
+        <div class="body" id="content">
+            <div class="body__content">
+                <div class="body__inner mx-auto">
+                    <div class="body__header" id="home">
+                        <div class="body__header__links">
+                            <div class="d-none xl:flex">
+                                <a>home</a>
+                                <a href="#experiences">experiences</a>
+                                <a href="#projects">projects</a>
+                                <a href="#graphics">graphics</a>
+                                <a href="#footer">contact</a>
+                            </div>
+                            <div class="theme">
+                                <div class="theme__inner">
+                                    <input type="checkbox" id="theme-toggle">
+                                    <label for="theme-toggle"></label>
+                                    <img src="../../assets/ico/sun.png">
+                                </div>
+                            </div>
+                            <span onclick="openNav()" class="open-sidenav xl:d-none"><i class="fa fa-bars"></i></span>
+                        </div>
+                        <div class="body__header__title">
+                            <h1>ZAHRA RABANI</h1>
+                            <h4>Hi! I am Zahra. welcome to my personal blog (;<br>I,m a developer and graphic designer.</h4>
+                        </div>
+                    </div>
+                    <div class="body__skils grid">
+                        <div class="body__skils__item col-12 md:col-6 lg:col-3 bg-color5 text-color-light body__skils__item--1">
+                            <h3>I</h3>
+                            <h4>Front-end <br> Developer
+                            </h4>
+                            <h6>Web development consists of two parts, front-end and back-end.</h6>
+                        </div>
+                        <div class="body__skils__item col-12 md:col-6 lg:col-3 bg-color4 text-color-dark body__skils__item--2">
+                            <h3>II</h3>
+                            <h4>UI, UX <br> Deseigner
+                            </h4>
+                            <h6>It is very interesting to think about the user experience and interface design!</h6>
+                        </div>
+                        <div class="body__skils__item col-12 md:col-6 lg:col-3 bg-color3 text-color-light body__skils__item--3">
+                            <h3>III</h3>
+                            <h4>Android <br> Developer
+                            </h4>
+                            <h6>Developing mobile applications and making life sweeter. (:</h6>
+                        </div>
+                        <div class="body__skils__item col-12 md:col-6 lg:col-3 bg-color2 text-color-light body__skils__item--4">
+                            <h3>IV</h3>
+                            <h4>Angular, <br> React
+                            </h4>
+                            <h6>The real meaning of front development; faster, cleaner and more basic.</h6>
+                        </div>
+                        <div class="body__skils__item--longer col-12 lg:col-6 body__skils__item--5" style="cursor: pointer !important;">
+                            <a href="/src/pages/about.html" style="text-decoration: none;color: unset;">
+                                <h3>Skills</h3>
+                                <h4>Things<br>I can do
+                                </h4>
+                                <h6>A list of skills that I know well or things I have experienced so far.</h6>
+                            </a>
+                        </div>
+                        <div class="col-12 md:col-6 lg:col-3 body__skils__item--6">
+                            <figure>
+                                <img src="../assets/img/img0001.jpg" alt="profile" id="profile">
+                            </figure>
+                        </div>
+                        <div class="col-12 md:col-6 lg:col-3 bg-color6 text-color-dark body__skils__item--7" style="cursor: pointer !important;">
+                            <a href="/src/pages/about.html" style="text-decoration: none;color: unset;">
+                                <h3>About</h3>
+                                <h4>a summary<br>about me
+                                </h4>
+                                <h6>A little details about my life and favorites</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="experiences bg-color1 text-color0" id="experiences">
+                        <div class="experiences__header">
+                            <h1 class="experiences__number">10</h1>
+                            <div class="experiences__title text-color6">
+                                <h2>EXPERIENCES</h2>
+                                <h4>I have experienced working with:</h4>
+                            </div>
+                        </div>
+                        <div class="experiences__content">
+                            <p>I have been programming for about 4 years. I am very interested in learning programming and application or web development. I am a professional in some of these skills and now I am looking to become a professional in the rest
+                                of them.</p>
+                            <div class="experiences__icons">
+                                <div class="tooltips">
+                                    <img src="../assets/ico/html.png" alt="html" class="tooltips__image">
+                                    <span class="tooltips__label">html</span>
+                                </div>
+                                <div class="tooltips">
+                                    <img src="../assets/ico/css.png" alt="css" class="tooltips__image">
+                                    <span class="tooltips__label">css</span>
+                                </div>
+                                <div class="tooltips">
+                                    <img src="../assets/ico/sass.png" alt="sass" class="tooltips__image">
+                                    <span class="tooltips__label">sass</span>
+                                </div>
+                                <div class="tooltips">
+                                    <img src="../assets/ico/javascript.png" alt="js" class="tooltips__image">
+                                    <span class="tooltips__label">javascript</span>
+                                </div>
+                                <div class="tooltips">
+                                    <img src="../assets/ico/react.png" alt="react" class="tooltips__image">
+                                    <span class="tooltips__label">react</span>
+                                </div>
+                                <div class="tooltips">
+                                    <img src="../assets/ico/typescript.png" alt="ts" class="tooltips__image">
+                                    <span class="tooltips__label">typescript</span>
+                                </div>
+                                <div class="tooltips">
+                                    <img src="../assets/ico/angular.png" alt="angular" class="tooltips__image">
+                                    <span class="tooltips__label">angular</span>
+                                </div>
+                                <div class="tooltips">
+                                    <img src="../assets/ico/vuejs.png" alt="vuejs" class="tooltips__image">
+                                    <span class="tooltips__label">vuejs</span>
+                                </div>
+                                <div class="tooltips">
+                                    <img src="../assets/ico/java.png" alt="java" class="tooltips__image">
+                                    <span class="tooltips__label">java</span>
+                                </div>
+                                <div class="tooltips">
+                                    <img src="../assets/ico/kotlin.png" alt="kotlin" class="tooltips__image">
+                                    <span class="tooltips__label">kotlin</span>
+                                </div>
+                                <div class="tooltips">
+                                    <img src="../assets/ico/git.png" alt="git" class="tooltips__image">
+                                    <span class="tooltips__label">git</span>
+                                </div>
+                            </div>
+                            <div class="experiences__icons">
+                                <div class="tooltips">
+                                    <img src="../assets/ico/androidstudio.png" alt="androidstudio" class="tooltips__image">
+                                    <span class="tooltips__label">android studio</span>
+                                </div>
+                                <div class="tooltips">
+                                    <img src="../assets/ico/visualstudio.png" alt="visualstudio" class="tooltips__image">
+                                    <span class="tooltips__label">visual studio</span>
+                                </div>
+                                <div class="tooltips">
+                                    <img src="../assets/ico/vscode.png" alt="vscode" class="tooltips__image">
+                                    <span class="tooltips__label">vscode</span>
+                                </div>
+                                <div class="tooltips">
+                                    <img src="../assets/ico/figma.png" alt="figma" class="tooltips__image">
+                                    <span class="tooltips__label">figma</span>
+                                </div>
+                                <div class="tooltips">
+                                    <img src="../assets/ico/xd.png" alt="xd" class="tooltips__image">
+                                    <span class="tooltips__label">adobe xd</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phrase bg-color2 text-color6">
+                        <div class="phrase__inner">
+                            <p>" You only live once, but if you do it right, once is enough." </p>
+                            <span>Mae West</span>
+                        </div>
+                    </div>
+                    <div class="projects bg-color0 text-color1" id="projects">
+                        <div class="projects__header">
+                            <h1 class="projects__number">4</h1>
+                            <div class="projects__title text-color6">
+                                <h2>PROJECTS</h2>
+                                <h4>List of my projects:</h4>
+                            </div>
+                        </div>
+                        <div class="projects__body">
+                            <div class="projects__images">
+                                <section class="carousel">
+                                    <div class="carousel__slider">
+                                        <div class="carousel__inner">
+                                            <div class="content__inner__slider">
+                                                <div class="item">
+                                                    <div class="projects__tests flex">
+                                                        <div class="img__item"><img src="../assets/img/img0004.png" alt="">
+                                                        </div>
+                                                        <div class="img__item"><img src="../assets/img/img0003.png" alt="">
+                                                        </div>
+                                                        <div class="img__item"><img src="../assets/img/img0005.png" alt="">
+                                                        </div>
+                                                        <div class="img__item"><img src="../assets/img/img0006.png" alt="">
+                                                        </div>
+                                                        <div class="img__item"><img src="../assets/img/img0004.png" alt="">
+                                                        </div>
+                                                        <div class="img__item"><img src="../assets/img/img0005.png" alt="">
+                                                        </div>
+                                                        <div class="img__item"><img src="../assets/img/img0006.png" alt="">
+                                                        </div>
+                                                        <div class="img__item"><img src="../assets/img/img0003.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item" style="background:orange;">hello2</div>
+                                                <div class="item" style="background:yellow;">hello4</div>
+                                                <div class="item" style="background:yellowgreen;">hello5</div>
+                                            </div>
+                                        </div>
+                                        <button class="prev"><img src="../assets/ico/prevbtn.png" alt="prev"></button>
+                                        <button class="next"><img src="../assets/ico/nextbtn.png" alt="next"></button>
+                                    </div>
+                                    <ul class="dots">
+                                        <li class="dot" value="0"></li>
+                                        <li class="dot" value="1"></li>
+                                        <li class="dot" value="2"></li>
+                                        <li class="dot" value="3"></li>
+                                    </ul>
+                                    <!-- <div class="form">
+                                                    <input type="checkbox" class="auto_slide" id="slide">
+                                                    <label for="slide">Auto Slide</label>
+                                                </div> -->
+                                </section>
+                            </div>
+                            <div class="projects__details">
+                                <h1>1.TIMENT</h1>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                    make a type specimen book. It has survived Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                                <div class="tags">
+                                    <span class="bg-color3">angular</span>
+                                    <span class="bg-color6">web</span>
+                                    <span class="bg-color5">type script</span>
+                                    <span class="bg-color3">front-end</span>
+                                    <span class="bg-color4">sass</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graphics bg-color1" id="graphics">
+                        <div class="graphics__header">
+                            <h1 class="graphics__number">7</h1>
+                            <div class="graphics__title text-color6">
+                                <h2>GRAPHICS</h2>
+                                <h4>I'm user friendly:</h4>
+                            </div>
+                        </div>
+                        <div class="graphics__content grid">
+                            <div class="col-5 lg:col">
+                                <img src="../assets/img/img0003.png" alt="">
+                            </div>
+                            <div class="col-5 lg:col">
+                                <img src="../assets/img/img0006.png" alt="">
+                            </div>
+                            <div class="col-5 lg:col text-color0 flex">
+                                <div class="my-auto p-3" style="height:fit-content;">
+                                    <h4 class="mb-3">UI/UX SAMPLE PROJECTS</h4>
+                                    <p class="mb-4 m-f-13">my sample UI/UX projects. click to see more.</p>
+                                    <a href="../src/pages/graphics.html">
+                                        <button id="veiw-more">view more</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-5 lg:col">
+                                <img src="../assets/img/img0005.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <m-footer id="footer"></m-footer>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

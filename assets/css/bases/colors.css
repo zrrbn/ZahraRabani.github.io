@@ -1,0 +1,166 @@
+:root[theme=dark] {
+  --color0: #131313;
+  --color1: #ECEBEB;
+  --color2: #1F3336;
+  --color3: #CE1A52;
+  --color4: #C1C1C1;
+  --color5: #5C8E85;
+  --color6: #A0BBAA;
+  --shadow: #131313be;
+  --toggle-shadow: #ffffff6e;
+}
+
+:root {
+  --color0: #ECEBEB;
+  --color1: #131313;
+  --color2: #1F3336;
+  --color3: #CE1A52;
+  --color4: #C1C1C1;
+  --color5: #5C8E85;
+  --color6: #A0BBAA;
+  --shadow: #ffffff6e;
+  --toggle-shadow: #13131377;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --dark: #131313;
+  --light: #ECEBEB;
+  --light-shadow: #ffffff6e;
+  --dark-shadow: #131313be;
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-black {
+  color: var(--black);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.bg-color0 {
+  background-color: var(--color0);
+}
+
+.bg-color1 {
+  background-color: var(--color1);
+}
+
+.bg-color-light {
+  background-color: var(--light);
+}
+
+.bg-color-dark {
+  background-color: var(--dark);
+}
+
+.bg-color2 {
+  background-color: var(--color2);
+}
+
+.bg-color3 {
+  background-color: var(--color3);
+}
+
+.bg-color4 {
+  background-color: var(--color4);
+}
+
+.bg-color5 {
+  background-color: var(--color5);
+}
+
+.bg-color6 {
+  background-color: var(--color6);
+}
+
+.bg-shadow {
+  background-color: var(--shadow);
+}
+
+.text-color0 {
+  color: var(--color0);
+}
+
+.text-color1 {
+  color: var(--color1);
+}
+
+.text-color-dark {
+  color: var(--dark);
+}
+
+.text-color-light {
+  color: var(--light);
+}
+
+.text-color2 {
+  color: var(--color2);
+}
+
+.text-color3 {
+  color: var(--color3);
+}
+
+.text-color4 {
+  color: var(--color4);
+}
+
+.text-color5 {
+  color: var(--color5);
+}
+
+.text-color6 {
+  color: var(--color6);
+}
+
+.border-color0 {
+  border-width: 2px;
+  border-color: var(--color0);
+  border-style: solid;
+}
+
+.border-color1 {
+  border-width: 2px;
+  border-color: var(--color1);
+  border-style: solid;
+}
+
+.border-color2 {
+  border-width: 2px;
+  border-color: var(--color2);
+  border-style: solid;
+}
+
+.border-color3 {
+  border-width: 2px;
+  border-color: var(--color3);
+  border-style: solid;
+}
+
+.border-color4 {
+  border-width: 2px;
+  border-color: var(--color4);
+  border-style: solid;
+}
+
+.border-color5 {
+  border-width: 2px;
+  border-color: var(--color5);
+  border-style: solid;
+}
+
+.border-color6 {
+  border-width: 2px;
+  border-color: var(--color6);
+  border-style: solid;
+}/*# sourceMappingURL=colors.css.map */

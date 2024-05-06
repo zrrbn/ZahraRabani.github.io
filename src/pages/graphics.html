@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>HOME</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- scripts -->
+    <script src="../../public/main.js" defer></script>
+    <script src="../../assets/js/pages/graphics.js" defer></script>
+    <script src="../../assets/js/components/footer.js" defer></script>
+    <!-- styles -->
+    <link rel="stylesheet" href="../../assets/css/pages/graphics.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Splash&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <body>
+        <div class="sidenav" id="sidenav">
+            <a href="javascript:void(0)" class="close-sidenav" onclick="closeNav()">&times;</a>
+            <a id="first" href="../../public/index.html" onclick="closeNav()">home</a>
+            <a href="#contact" onclick="closeNav()">contact</a>
+            <a href="./about.html" onclick="closeNav()">about</a>
+        </div>
+        <div class="body">
+            <div class="body__content">
+                <div class="body__inner mx-auto">
+                    <div class="body__header">
+                        <div class="body__header__links">
+                            <div class="d-none xl:flex">
+                                <a href="../../public/index.html">home</a>
+                                <a href="#contact">contact</a>
+                                <a href="./about.html">about</a>
+                            </div>
+                            <div class="theme">
+                                <div class="theme__inner">
+                                    <input type="checkbox" id="theme-toggle">
+                                    <label for="theme-toggle"></label>
+                                    <img src="../../assets/ico/sun.png">
+                                </div>
+                            </div>
+                            <span onclick="openNav()" class="open-sidenav xl:d-none"><i class="fa fa-bars"></i></span>
+                        </div>
+                    </div>
+                    <div class="contents">
+                        <div class="gallery px-2 xl:px-0">
+                            <div class="grid mb-2">
+                                <div class="col me-2">
+                                    <img src="../../assets/img/graphics/4-1.png" alt="img1">
+                                </div>
+                                <div class="col me-2">
+                                    <img src="../../assets/img/graphics/4-2.png" alt="img1">
+                                </div>
+                                <div class="col">
+                                    <img src="../../assets/img/graphics/4-3.png" alt="img1">
+                                </div>
+                            </div>
+                            <div class="grid mb-2">
+                                <div class="col me-2">
+                                    <img src="../../assets/img/graphics/3-1.png" alt="img1">
+                                </div>
+                                <div class="col">
+                                    <img src="../../assets/img/graphics/3-2.png" alt="img1">
+                                </div>
+                            </div>
+                            <div class="grid mb-2">
+                                <div class="col me-2">
+                                    <img src="../../assets/img/graphics/1-1.png" alt="img1">
+                                </div>
+                                <div class="col">
+                                    <div class="grid mb-2">
+                                        <div class="col me-2">
+                                            <img src="../../assets/img/graphics/1-2.png" alt="img1">
+                                        </div>
+                                        <div class="col">
+                                            <img src="../../assets/img/graphics/1-3.png" alt="img1">
+                                        </div>
+                                    </div>
+                                    <div class="grid">
+                                        <div class="col me-2">
+                                            <img src="../../assets/img/graphics/1-4.png" alt="img1">
+                                        </div>
+                                        <div class="col">
+                                            <img src="../../assets/img/graphics/1-5.png" alt="img1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid mb-2">
+                                <div class="col me-2">
+                                    <div class="grid">
+                                        <div class="col me-2">
+                                            <img src="../../assets/img/graphics/2-2.png" alt="img1">
+                                        </div>
+                                        <div class="col">
+                                            <img src="../../assets/img/graphics/2-3.png" alt="img1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <img src="../../assets/img/graphics/2-1.png" alt="img1">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="contact">
+                            <m-footers></m-footers>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </body>
+
+</html>

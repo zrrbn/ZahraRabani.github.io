@@ -1,0 +1,197 @@
+@use "sass:math";
+@import '../../../public/style.scss';
+$self: &;
+$imag-width: 19.79vw;
+@media screen and(min-width:1920px) {
+    $imag-width: 380px;
+}
+
+$after-image-gap: 1.5rem;
+.about__gap {
+    height: math.div($imag-width, 2);
+}
+
+.body__header {
+    min-height: 0 !important;
+    height: 0 !important;
+    max-height: 0 !important;
+}
+
+.body__inner {
+    margin-top: $base-vertical-gap/2;
+}
+
+.contents {
+    opacity: 0;
+    margin-top: 100vh;
+    animation: slide-up-show 1s 1s ease-in-out forwards;
+}
+
+.about {
+    $self: &;
+    top: 0;
+    &__header {
+        display: flex;
+        align-items: center;
+        transform: translateY(math.div($imag-width, 3));
+        padding: 0 $base-horizontal-gap;
+        img {
+            width: $imag-width;
+            height: $imag-width;
+            z-index: 999;
+        }
+        #{$self}__title {
+            margin-inline-start: $after-image-gap;
+            text-align: start;
+            top: 0;
+            transform: translateY(-10%);
+            h2 {
+                @include title1();
+            }
+            h4 {
+                @include title2();
+            }
+        }
+    }
+    &__content {
+        top: 0;
+        padding: $base-vertical-gap;
+        p {
+            padding-inline-start: calc($imag-width + $after-image-gap);
+            @include text-justify;
+            line-height: 2rem;
+            font-weight: 200;
+        }
+    }
+}
+
+.contact {
+    align-items: stretch;
+    top: 0;
+    &__title {
+        display: flex;
+        align-items: center;
+    }
+    &__title__inner {
+        margin: 6rem;
+        h2 {
+            margin-bottom: 1.5rem;
+            font-size: var(--f28);
+            line-height: var(--f28);
+        }
+        p {
+            @include text-justify;
+            line-height: 2rem;
+            font-size: var(--14);
+            padding-top: 3rem;
+            font-weight: 100;
+        }
+    }
+    &__title__inner h2:before {
+        content: "";
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        margin-inline-end: .75rem;
+        background: var(--color3);
+    }
+    &__form {
+        padding: 2.4rem;
+        #submit {
+            background-color: var(--color3);
+            width: unset;
+            padding: .5rem 3rem;
+            margin-top: 0;
+            text-transform: uppercase;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all .6s;
+        }
+        #submit:hover {
+            background-color: var(--color1);
+            color: var(--color3);
+        }
+    }
+}
+
+:root[theme=light] {
+    input[type=text],
+    select {
+        border-bottom: 2px solid #25252565;
+    }
+    textarea {
+        border: 2px solid #25252565;
+        padding: .25rem .5rem;
+        height: 220px;
+        resize: none;
+        margin-bottom: .5rem;
+    }
+}
+
+:root[theme=dark] {
+    input[type=text],
+    select {
+        border-bottom: 2px solid #ffffff38;
+    }
+    textarea {
+        border: 2px solid #ffffff38;
+        padding: .25rem .5rem;
+        height: 220px;
+        resize: none;
+        margin-bottom: .5rem;
+    }
+}
+
+.favorites {
+    $self: &;
+    padding: 3rem 6rem;
+    align-items: center;
+    &__text {
+        #{$self}__title {
+            text-align: start;
+            padding-bottom: 1.5rem;
+            h2 {
+                @include title1();
+            }
+            h4 {
+                @include title2();
+            }
+            p {
+                @include text-justify;
+                line-height: 2rem;
+                font-size: var(--f14);
+                padding-top: 3rem;
+            }
+        }
+    }
+    &__photo {
+        position: relative;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        #{$self}__next {
+            background: var(--color3);
+            width: 48px;
+            height: 48px;
+            display: flex;
+            color: var(--light);
+            font-size: var(--f24);
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            inset-inline-start: -24px;
+            top: calc(50% - 24px);
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    @media screen and(min-width:992px) {
+        #{$self}__title {
+            padding-inline-end: 8rem;
+            padding-bottom: 0;
+        }
+    }
+}

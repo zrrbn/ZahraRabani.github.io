@@ -1,0 +1,142 @@
+@use 'themes/dark';
+@use 'themes/light';
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --dark: #131313;
+    --light: #ECEBEB;
+    --light-shadow: #ffffff6e;
+    --dark-shadow: #131313be;
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-black {
+    color: var(--black);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+//local
+//.bg colors
+.bg-color0 {
+    background-color: var(--color0);
+}
+
+.bg-color1 {
+    background-color: var(--color1);
+}
+
+.bg-color-light {
+    background-color: var(--light);
+}
+
+.bg-color-dark {
+    background-color: var(--dark);
+}
+
+.bg-color2 {
+    background-color: var(--color2);
+}
+
+.bg-color3 {
+    background-color: var(--color3);
+}
+
+.bg-color4 {
+    background-color: var(--color4);
+}
+
+.bg-color5 {
+    background-color: var(--color5);
+}
+
+.bg-color6 {
+    background-color: var(--color6);
+}
+
+.bg-shadow {
+    background-color: var(--shadow);
+}
+
+//.text colors
+.text-color0 {
+    color: var(--color0);
+}
+
+.text-color1 {
+    color: var(--color1);
+}
+
+.text-color-dark {
+    color: var(--dark)
+}
+
+.text-color-light {
+    color: var(--light);
+}
+
+.text-color2 {
+    color: var(--color2);
+}
+
+.text-color3 {
+    color: var(--color3);
+}
+
+.text-color4 {
+    color: var(--color4);
+}
+
+.text-color5 {
+    color: var(--color5);
+}
+
+.text-color6 {
+    color: var(--color6);
+}
+
+//.border colors
+@mixin border($color, $width:2px, $style:solid) {
+    border: {
+        width: $width;
+        color: $color;
+        style: $style;
+    }
+}
+
+.border-color0 {
+    @include border(var(--color0));
+}
+
+.border-color1 {
+    @include border(var(--color1));
+}
+
+.border-color2 {
+    @include border(var(--color2));
+}
+
+.border-color3 {
+    @include border(var(--color3));
+}
+
+.border-color4 {
+    @include border(var(--color4));
+}
+
+.border-color5 {
+    @include border(var(--color5));
+}
+
+.border-color6 {
+    @include border(var(--color6));
+}

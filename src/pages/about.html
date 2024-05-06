@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>HOME</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- scripts -->
+    <script src="../../public/main.js" defer></script>
+    <script src="../../assets/js/pages/about.js" defer></script>
+    <script src="../../assets/js/components/footer.js" defer></script>
+    <!-- styles -->
+    <link rel="stylesheet" href="../../assets/css/pages/about.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Splash&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <body>
+        <div class="sidenav" id="sidenav">
+            <a href="javascript:void(0)" class="close-sidenav" onclick="closeNav()">&times;</a>
+            <a id="first" href="../../public/index.html" onclick="closeNav()">home</a>
+            <a href="#contact" onclick="closeNav()">contact</a>
+            <a href="#favorites" onclick="closeNav()">favorites</a>
+        </div>
+        <div class="body">
+            <div class="body__content">
+                <div class="body__inner mx-auto">
+                    <div class="body__header">
+
+                        <div class="body__header__links">
+                            <div class="d-none xl:flex">
+                                <a href="../../public/index.html">home</a>
+                                <a href="#contact">contact</a>
+                                <a href="#favorites">favorites</a>
+                            </div>
+                            <div class="theme">
+                                <div class="theme__inner">
+                                    <input type="checkbox" id="theme-toggle">
+                                    <label for="theme-toggle"></label>
+                                    <img src="../../assets/ico/sun.png">
+                                </div>
+                            </div>
+                            <span onclick="openNav()" class="open-sidenav xl:d-none"><i class="fa fa-bars"></i></span>
+                        </div>
+                    </div>
+                    <div class="contents">
+                        <div class="about">
+                            <div class="about__header">
+                                <img src="../../assets/img/img0002.jpg" alt="profile">
+                                <div class="about__title text-color5">
+                                    <h2>ABOUT</h2>
+                                    <h4>I'm user with:</h4>
+                                </div>
+                            </div>
+                            <div class="about__content bg-color0">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                    <br> make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting ,remaiing essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                                    centuries, but also the leap into electronic typesetting ,remaiing essentially unchanged.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact grid" id="contact">
+                            <div class="contact__title col-12 lg:col-7 bg-color5">
+                                <div class="contact__title__inner">
+                                    <h2 class="text-color6">CONTACT</h2>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type <br> 1500s, when an unknown printer took a galley of type and
+                                        scrambled only five centuries, but also the leap into electronic typesetting ,remaiing essentially unchanged.</p>
+                                </div>
+                            </div>
+                            <div class="contact__form col-12 lg:col-5">
+                                <form>
+                                    <div>
+                                        <label for="email">Email:</label>
+                                        <input type="text" id="email" name="email" placeholder="Enter your Email address.">
+                                    </div>
+                                    <div class="grid">
+                                        <div class="col-6 lg:col-12 xl:col-6 pe-2 lg:pe-0 xl:pe-2">
+                                            <label for="fname">First name:</label>
+                                            <input type="text" id="fname" name="firstname" placeholder="Enter your name.">
+                                        </div>
+                                        <div class="col-6 lg:col-12 xl:col-6 ps-2 lg:ps-0 xl:ps-2">
+                                            <label for="lname">Last name:</label>
+                                            <input type="text" id="lname" name="lastname" placeholder="Enter your last name.">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label for="caption">Desc:</label>
+                                        <textarea id="caption" name="caption" placeholder="Write something to me ..." spellcheck="false"></textarea>
+                                    </div>
+                                    <div class="text-end">
+                                        <input type="submit" id="submit">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="favorites bg-color1 grid" id="favorites">
+                            <div class="favorites__text col-12 lg:col-8">
+                                <div class="favorites__title text-color5">
+                                    <h2>FAVORITES</h2>
+                                    <h4>I'm user with:</h4>
+                                    <p class="text-color0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                                        to make a type specimen book. It has survived not only </p>
+                                </div>
+                            </div>
+                            <div class="favorites__photo col-12 lg:col-4">
+                                <img src="../../assets/img/img0007.png" alt="img0007">
+                                <span class="favorites__next">
+                                <img src="../../assets/ico/prev.png" alt="right">
+                            </span>
+                            </div>
+                        </div>
+                        <m-footers></m-footers>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </body>
+
+</html>

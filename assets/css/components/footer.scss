@@ -1,0 +1,64 @@
+@import '../../../public/style.scss';
+.footer {
+    &__contact {
+        padding: 3rem;
+        div {
+            text-align: center;
+        }
+    }
+    &__contact__inner {
+        display: flex;
+        flex-flow: column;
+    }
+    &__socials {
+        padding: 3rem;
+        div {
+            text-align: center;
+        }
+        a {
+            margin-inline-end: 1.5rem;
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+            font-size: var(--f20);
+            cursor: pointer;
+            color: var(--color5);
+        }
+        a:last-child {
+            margin-inline-end: 0;
+        }
+        a:hover {
+            color: var(--color3);
+        }
+    }
+}
+
+#contact {
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    font-size: var(--f15);
+}
+
+#phone,
+#mail {
+    font-weight: 200;
+    margin-bottom: .5rem;
+    font-size: var(--f13);
+}
+
+#address {
+    font-weight: 400;
+    margin-top: .7rem;
+    font-size: var(--f13);
+}
+
+#socials,
+#projects {
+    font-weight: 700;
+    font-size: var(--f13);
+}
+
+#rights {
+    font-weight: 300;
+    margin-top: 1.5rem;
+    font-size: var(--f13);
+}
