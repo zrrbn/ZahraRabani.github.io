@@ -12,6 +12,10 @@ fetch("../src/components/footer.html")
     .then(text => define(text, 'm-footer'))
     .catch((error) => {
         console.log(error)
+        setTimeout(() => {
+            console.log('refetching')
+            reFetch();
+        }, 1000)
     });
 
 function reFetch() {
