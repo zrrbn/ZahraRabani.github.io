@@ -16,6 +16,7 @@ function reFetch() {
     .then(function (response) {
         if (!response.ok) {
             console.log('failed!')
+            console.log(response)
         } else {
             return response.text();
         }
