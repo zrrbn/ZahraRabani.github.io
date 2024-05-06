@@ -1,33 +1,36 @@
 fetch("../src/components/footer.html")
     .then(function (response) {
         if (!response.ok) {
-            reFetch();
+            setTimeout(() => {
+                console.log('refetching')
+                reFetch();
+            }, 1000)
         } else {
             return response.text();
         }
     })
-    .then(text => define(text,'m-footer'))
+    .then(text => define(text, 'm-footer'))
     .catch((error) => {
         console.log(error)
     });
 
 function reFetch() {
     fetch("../components/footer.html")
-    .then(function (response) {
-        if (!response.ok) {
-            console.log('failed!')
-            console.log(response)
-        } else {
-            return response.text();
-        }
-    })
-    .then(text => define(text,'m-footers'))
-    .catch((error) => {
-        console.log(error)
-    });
+        .then(function (response) {
+            if (!response.ok) {
+                console.log('failed!')
+                console.log(response)
+            } else {
+                return response.text();
+            }
+        })
+        .then(text => define(text, 'm-footers'))
+        .catch((error) => {
+            console.log(error)
+        });
 }
 
-function define(html,name) {
+function define(html, name) {
     class Footer extends HTMLElement {
         constructor() {
             super();
