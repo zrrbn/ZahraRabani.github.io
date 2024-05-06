@@ -1,10 +1,7 @@
 fetch("../src/components/footer.html")
     .then(function (response) {
         if (!response.ok) {
-            setTimeout(() => {
-                console.log('refetching')
-                reFetch();
-            }, 1000)
+            reFetch();
         } else {
             return response.text();
         }
@@ -12,10 +9,6 @@ fetch("../src/components/footer.html")
     .then(text => define(text, 'm-footer'))
     .catch((error) => {
         console.log(error)
-        setTimeout(() => {
-            console.log('refetching')
-            reFetch();
-        }, 1000)
     });
 
 function reFetch() {
@@ -23,7 +16,6 @@ function reFetch() {
         .then(function (response) {
             if (!response.ok) {
                 console.log('failed!')
-                console.log(response)
             } else {
                 return response.text();
             }
@@ -43,7 +35,6 @@ function define(html, name) {
         }
     }
     customElements.define(name, Footer);
-    // customElements.define('m-carousel', Footer);
     customElements.whenDefined('m-footer').then(() => {
         console.log('footer defined');
     });
